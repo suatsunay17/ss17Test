@@ -10,6 +10,15 @@ export const StyledCard2Container = styled((props) => {
   border-radius: 10px;
   padding: 0.8rem 3rem;
   gap: 1.5rem;
+
+  &:hover {
+    border: 3px solid #006efd;
+    cursor: pointer;
+  
+    h1{
+      color:#006efd;
+    }
+  }
 `;
 
 export const HighlightWord = styled.span`
