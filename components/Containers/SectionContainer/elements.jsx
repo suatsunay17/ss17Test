@@ -10,3 +10,11 @@ export const StyledSectionContainer = styled(({ topMargin = 0, bottomMargin = 0,
   margin-top: ${({ topMargin }) => topMargin}rem;
   margin-bottom: ${({ bottomMargin }) => bottomMargin}rem;
 `;
+
+export const StyledCardContainer = styled(({...props}) => (
+    <div {...props} />
+))`
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+`
