@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const StyledCardListContainer = styled((props) => {
-    return <div {...props} />
-}) `
-
+  return <div {...props} />;
+})`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
 
 export const StyledCardContainer = styled((props) => {
   return <div {...props} />;
 })`
-  width: 370px;
+  width: 380px;
   display: flex;
   align-items: center;
   background-color: #f8f8f9;
@@ -17,12 +19,21 @@ export const StyledCardContainer = styled((props) => {
   padding: 0.8rem 3rem;
   gap: 1.5rem;
 
+  :nth-child(2) {
+    width: 410px;
+  }
+
+  :nth-child(3) {
+    width: 450px;
+  }
+
   &:hover {
     border: 3px solid #006efd;
     cursor: pointer;
-  
-    h1{
-      color:#006efd;
+
+    h1 {
+      color: #006efd;
+      text-decoration: underline;
     }
   }
 `;
@@ -52,5 +63,5 @@ export const StyledCardDesc = styled((props) => {
   return <p {...props} />;
 })`
   margin-top: -16px;
-  font-size: 17px;
+  font-size: 18px;
 `;

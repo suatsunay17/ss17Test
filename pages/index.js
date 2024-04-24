@@ -8,19 +8,32 @@ const heroProps = {
     cta1: {
       img: "https://img.icons8.com/badges/48/blueprint.png",
       title: "Brief",
-      description: `Complete brief writing or simple guidance on what to include, we've got you covered.`,
+      description: (
+        <>
+          Complete <b>brief writing or simple guidance</b> on what to include,
+          we've got you covered.
+        </>
+      ),
     },
     cta2: {
       img: "https://img.icons8.com/dotty/80/view-file.png",
       title: "Search",
-      description:
-        "In-depth agency search covering; criteria mathing, door knocking and due-dilligence vetting.",
+      description: (
+        <>
+          In-depth agency search covering; <b>criteria mathing</b>, door
+          knocking and due-dilligence vetting.
+        </>
+      ),
     },
     cta3: {
       img: "https://img.icons8.com/dotty/80/meeting-room.png",
       title: "Pitch",
-      description:
-        "Comprehensive pitch management, including comms, diary management and pitch hosting.",
+      description: (
+        <>
+          Comprehensive <b>pitch management</b>, including comms, diary
+          management and pitch hosting.
+        </>
+      ),
     },
   },
 };
