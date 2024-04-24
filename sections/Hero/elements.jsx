@@ -25,10 +25,10 @@ export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
   color: black;
 
   @media (max-width: 680px) {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
-  @media (max-width: 470px) {
+  @media (max-width: 500px) {
     font-size: 1.7rem;
     text-align: center;
   }
@@ -42,10 +42,10 @@ export const StyledDescription = styled((props) => (
   font-size: 24px;
 
   @media (max-width: 680px) {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
-  @media (max-width: 470px) {
+  @media (max-width: 500px) {
     font-size: 1.2rem;
     text-align: center;
   }
