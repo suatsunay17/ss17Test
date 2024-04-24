@@ -11,7 +11,7 @@ const heroProps = {
       description: (
         <>
           Complete <b>brief writing or simple guidance</b> on what to include,
-          we've got you covered.
+          we&apos;ve got you covered.
         </>
       ),
     },
