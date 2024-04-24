@@ -24,7 +24,7 @@ export const StyledCardContainer = styled((props) => {
   }
 
   :nth-child(3) {
-    width: 450px;
+    width: 440px;
   }
 
   &:hover {
