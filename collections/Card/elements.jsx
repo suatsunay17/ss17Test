@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardContainer = styled((props) => {
   return <div {...props} />;
 })`
-display:flex;
+  display: flex;
   flex-direction: column;
   gap: 2rem;
 `;

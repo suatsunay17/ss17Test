@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
-export const StyledCard3Container = styled((props) => {
+export const StyledCardListContainer = styled((props) => {
+    return <div {...props} />
+}) `
+
+`;
+
+export const StyledCardContainer = styled((props) => {
   return <div {...props} />;
 })`
-  width: 420px;
+  width: 370px;
   display: flex;
   align-items: center;
-  background-color: #f1f1f1;
+  background-color: #f8f8f9;
   border-radius: 10px;
   padding: 0.8rem 3rem;
   gap: 1.5rem;
@@ -14,9 +20,9 @@ export const StyledCard3Container = styled((props) => {
   &:hover {
     border: 3px solid #006efd;
     cursor: pointer;
-
-    h1 {
-      color: #006efd;
+  
+    h1{
+      color:#006efd;
     }
   }
 `;
@@ -25,20 +31,24 @@ export const HighlightWord = styled.span`
   font-weight: bold;
 `;
 
-export const StyledCard3InnerText = styled((props) => {
+export const StyledCardInnerText = styled((props) => {
   return <div {...props} />;
 })`
   font-family: Poppins;
   margin-left: 1rem;
 `;
 
-export const StyledCard3Title = styled((props) => {
+export const StyledCardTitle = styled((props) => {
   return <h1 {...props} />;
 })`
   font-size: 22px;
+  // &:hover{
+  //   color:#006EFD;
+  //   text-decoration:underline;
+  // }
 `;
 
-export const StyledCard3Desc = styled((props) => {
+export const StyledCardDesc = styled((props) => {
   return <p {...props} />;
 })`
   margin-top: -16px;

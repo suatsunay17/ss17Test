@@ -8,7 +8,7 @@ import {
   StyledImageContainer,
   StyledBottomContainer,
 } from "./elements";
-import { Card } from "../../collections/Card/Card";
+import { Card } from "~/collections";
 
 export const Hero = ({ image, title, description, ctaText, ...props }) => {
   return (

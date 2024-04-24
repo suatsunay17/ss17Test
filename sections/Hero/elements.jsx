@@ -25,6 +25,10 @@ export const StyledContainer = styled(({ height, ...props }) => (
 export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
   margin: 0;
   color: black;
+
+  @media (max-width:680px){
+    font-size: 2rem;
+  }
 `;
 
 export const StyledDescription = styled((props) => (
