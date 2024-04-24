@@ -7,12 +7,17 @@ import {
   StyledCardTitle,
 } from "./elements";
 
-export default function CardList({ data }) {
+export const CardList = ({ data }) => {
   return (
     <StyledCardListContainer>
       {Object.keys(data).map((item, i) => (
         <StyledCardContainer key={i}>
-          <Image width="120" height="120" src={data[item].img} alt="blueprint" />
+          <Image
+            width="120"
+            height="120"
+            src={data[item].img}
+            alt="blueprint"
+          />
           <StyledCardInnerText>
             <StyledCardTitle>{data[item].title}</StyledCardTitle>
             <StyledCardDesc>{data[item].description}</StyledCardDesc>
@@ -21,4 +26,4 @@ export default function CardList({ data }) {
       ))}
     </StyledCardListContainer>
   );
-}
+};
