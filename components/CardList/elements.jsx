@@ -6,6 +6,10 @@ export const StyledCardListContainer = styled((props) => {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 1024px) {
+    align-items: center;
+  }
 `;
 
 export const StyledCardContainer = styled((props) => {
@@ -18,6 +22,7 @@ export const StyledCardContainer = styled((props) => {
   border-radius: 10px;
   padding: 0.8rem 3rem;
   gap: 1.5rem;
+
 
   :nth-child(2) {
     width: 410px;
@@ -36,10 +41,6 @@ export const StyledCardContainer = styled((props) => {
       text-decoration: underline;
     }
   }
-`;
-
-export const HighlightWord = styled.span`
-  font-weight: bold;
 `;
 
 export const StyledCardInnerText = styled((props) => {
