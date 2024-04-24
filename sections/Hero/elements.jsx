@@ -65,6 +65,11 @@ export const StyledImageContainer = styled(({ ...props }) => (
   @media (max-width: 1024px) {
     margin-top: 3rem;
   }
+
+  @media (max-width: 500px) {
+    width: 300px;
+    max-width: 300px;
+  }
 `;
 
 export const StyledBottomContainer = styled(({ ...props }) => (
