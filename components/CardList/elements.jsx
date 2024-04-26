@@ -15,7 +15,7 @@ export const StyledCardListContainer = styled((props) => {
 export const StyledCardContainer = styled((props) => {
   return <div {...props} />;
 })`
-  width: 380px;
+  width: 370px;
   display: flex;
   align-items: center;
   background-color: #f8f8f9;
@@ -23,14 +23,21 @@ export const StyledCardContainer = styled((props) => {
   padding: 0.8rem 3rem;
   gap: 1.5rem;
 
-
   :nth-child(2) {
-    width: 410px;
+    width: 400px;
   }
 
   :nth-child(3) {
-    width: 440px;
+    width: 430px;
   }
+
+  @media (max-width: 500px) {
+
+  }
+ 
+
+
+ 
 
   &:hover {
     border: 3px solid #006efd;
