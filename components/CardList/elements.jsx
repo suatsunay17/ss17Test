@@ -31,14 +31,6 @@ export const StyledCardContainer = styled((props) => {
     width: 430px;
   }
 
-  @media (max-width: 500px) {
-
-  }
- 
-
-
- 
-
   &:hover {
     border: 3px solid #006efd;
     cursor: pointer;
