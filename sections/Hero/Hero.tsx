@@ -8,7 +8,7 @@ import {
   StyledBottomContainer,
 } from "./elements";
 import { Card } from "~/collections";
-import React from 'react';
+import React from "react";
 
 interface HeroProps {
   image: {
@@ -23,7 +23,13 @@ interface HeroProps {
   props: any;
 }
 
- const Hero :React.FC<HeroProps> = ({ image, title, description, ctaText, ...props }: HeroProps) => {
+export const Hero: React.FC<HeroProps> = ({
+  image,
+  title,
+  description,
+  ctaText,
+  ...props
+}: HeroProps) => {
   return (
     <StyledContainer {...props}>
       <StyledTextContainer>
@@ -45,5 +51,3 @@ interface HeroProps {
     </StyledContainer>
   );
 };
-
-export default Hero;
