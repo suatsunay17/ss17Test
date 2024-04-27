@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const StyledCardListContainer = styled((props) => {
-  return <div {...props} />;
-})`
+const StyledCardListContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -12,9 +10,7 @@ export const StyledCardListContainer = styled((props) => {
   }
 `;
 
-export const StyledCardContainer = styled((props) => {
-  return <div {...props} />;
-})`
+const StyledCardContainer = styled.div`
   width: 370px;
   display: flex;
   align-items: center;
@@ -42,26 +38,24 @@ export const StyledCardContainer = styled((props) => {
   }
 `;
 
-export const StyledCardInnerText = styled((props) => {
-  return <div {...props} />;
-})`
+const StyledCardInnerText = styled.div`
   font-family: Poppins;
   margin-left: 1rem;
 `;
 
-export const StyledCardTitle = styled((props) => {
-  return <h1 {...props} />;
-})`
+const StyledCardTitle = styled.h1`
   font-size: 22px;
-  // &:hover{
-  //   color:#006EFD;
-  //   text-decoration:underline;
-  // }
 `;
 
-export const StyledCardDesc = styled((props) => {
-  return <p {...props} />;
-})`
+const StyledCardDesc = styled.p`
   margin-top: -16px;
   font-size: 18px;
 `;
+
+export {
+  StyledCardListContainer,
+  StyledCardContainer,
+  StyledCardInnerText,
+  StyledCardTitle,
+  StyledCardDesc,
+};

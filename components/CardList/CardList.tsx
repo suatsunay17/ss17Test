@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 import {
   StyledCardContainer,
   StyledCardDesc,
@@ -7,14 +8,24 @@ import {
   StyledCardTitle,
 } from "./elements";
 
-export const CardList = ({ data }) => {
+interface CardListProps {
+  data: {
+    [key: string]: {
+      img: string;
+      title: string;
+      description: string;
+    };
+  };
+}
+
+export const CardList: React.FC<CardListProps> = ({ data }) => {
   return (
     <StyledCardListContainer>
       {Object.keys(data).map((item, i) => (
         <StyledCardContainer key={i}>
           <Image
-            width="120"
-            height="120"
+            width={120}
+            height={120}
             src={data[item].img}
             alt="blueprint"
           />

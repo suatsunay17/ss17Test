@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import {
   StyledTextContainer,
   StyledContainer,
@@ -10,7 +9,20 @@ import {
 } from "./elements";
 import { Card } from "~/collections";
 
-export const Hero = ({ image, title, description, ctaText, ...props }) => {
+interface HeroProps {
+  image: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
+  title: string;
+  description: string;
+  ctaText: string;
+  props: any;
+}
+
+export const Hero = ({ image, title, description, ctaText, ...props }: HeroProps) => {
   return (
     <StyledContainer {...props}>
       <StyledTextContainer>
@@ -27,7 +39,7 @@ export const Hero = ({ image, title, description, ctaText, ...props }) => {
             height={image.height}
           />
         </StyledImageContainer>
-        <Card ctaText={ctaText}/>
+        <Card ctaText={ctaText} />
       </StyledBottomContainer>
     </StyledContainer>
   );
