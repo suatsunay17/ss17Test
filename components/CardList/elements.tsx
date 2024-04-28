@@ -38,20 +38,43 @@ const StyledCardContainer = styled.div`
     }
   }
 
+  @media (max-width: 450px) {
+    width: 270px;
+    align-self: center;
+
+    :nth-child(2) {
+      width: 300px;
+      align-self: center;
+    }
+
+    :nth-child(3) {
+      width: 330px;
+      align-self: center;
+    }
+  }
 `;
 
 const StyledCardInnerText = styled.div`
   font-family: Poppins;
   margin-left: 1rem;
+  
 `;
 
 const StyledCardTitle = styled.h1`
   font-size: 22px;
+
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
 `;
 
 const StyledCardDesc = styled.p`
   margin-top: -16px;
   font-size: 18px;
+
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 `;
 
 export {
