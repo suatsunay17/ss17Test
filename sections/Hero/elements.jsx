@@ -24,14 +24,24 @@ export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
   margin: 0;
   color: black;
 
-  @media (max-width: 680px) {
-    font-size: 2.1rem;
+  @media (max-width: 800px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 690px) {
+    font-size: 30px;
+  }
+  @media (max-width: 550px) {
+    font-size: 26px;
   }
 
   @media (max-width: 500px) {
-    font-size: 1.7rem;
+    font-size: 22px;
     text-align: center;
   }
+
+
+  
 `;
 
 export const StyledDescription = styled((props) => (
@@ -41,12 +51,20 @@ export const StyledDescription = styled((props) => (
   text-align: center;
   font-size: 24px;
 
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
+
   @media (max-width: 680px) {
     font-size: 1.1rem;
   }
 
+  @media (max-width: 550px) {
+    font-size: 16px;
+  }
+
   @media (max-width: 500px) {
-    font-size: 1.2rem;
+    font-size: 14px;
     text-align: center;
   }
 `;
@@ -59,16 +77,18 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
 export const StyledImageContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  max-width: 360px;
   width: 360px;
 
   @media (max-width: 1024px) {
     margin-top: 3rem;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     width: 300px;
-    max-width: 300px;
+  }
+
+  @media (max-width: 500px) {
+    width: 260px;
   }
 `;
 

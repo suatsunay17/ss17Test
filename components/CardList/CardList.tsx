@@ -23,7 +23,7 @@ export const CardList: React.FC<CardListProps> = ({ data }) => {
     <StyledCardListContainer>
       {Object.keys(data).map((item, i) => (
         <StyledCardContainer key={i}>
-          <Image
+          <Image className="img"
             width={120}
             height={120}
             src={data[item].img}

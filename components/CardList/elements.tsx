@@ -38,18 +38,54 @@ const StyledCardContainer = styled.div`
     }
   }
 
-  @media (max-width: 450px) {
-    width: 270px;
+  @media (max-width: 600px) {
+    width: 260px;
     align-self: center;
 
     :nth-child(2) {
-      width: 300px;
+      width: 290px;
       align-self: center;
     }
 
     :nth-child(3) {
-      width: 330px;
+      width: 320px;
       align-self: center;
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 200px;
+    align-self: center;
+
+    :nth-child(2) {
+      width: 230px;
+      align-self: center;
+    }
+
+    :nth-child(3) {
+      width: 260px;
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    width: 140px;
+    align-self: center;
+
+    gap:0;
+
+    :nth-child(2) {
+      width: 170px;
+      align-self: center;
+    }
+
+    :nth-child(3) {
+      width: 200px;
+      align-self: center;
+    }
+
+    span {
+      width: 10px;
     }
   }
 `;
@@ -57,14 +93,14 @@ const StyledCardContainer = styled.div`
 const StyledCardInnerText = styled.div`
   font-family: Poppins;
   margin-left: 1rem;
-  
 `;
 
 const StyledCardTitle = styled.h1`
   font-size: 22px;
 
-  @media (max-width: 450px) {
-    font-size: 18px;
+  @media (max-width: 400px) {
+    font-size: 12px;
+    margin-bottom: 16px;
   }
 `;
 
@@ -72,8 +108,9 @@ const StyledCardDesc = styled.p`
   margin-top: -16px;
   font-size: 18px;
 
-  @media (max-width: 450px) {
-    font-size: 14px;
+  @media (max-width: 400px) {
+    font-size: 10px;
+    display:inline-block;
   }
 `;
 
