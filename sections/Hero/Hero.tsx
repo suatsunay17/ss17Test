@@ -10,9 +10,6 @@ import {
 import { Card } from "~/collections";
 import React from "react";
 import { HeroProps } from "~pages";
-import { CtaTexts } from "~pages";
-
-
 
 export const Hero: React.FC<HeroProps> = ({
   image,

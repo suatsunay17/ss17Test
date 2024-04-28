@@ -14,25 +14,19 @@ export type CtaProps = {
   description: JSX.Element;
 };
 
-export type CtaTexts = {
-  cta1: CtaProps;
-  cta2: CtaProps;
-  cta3: CtaProps;
-};
-
 export type HeroProps = {
   image: ImageProps;
   title: string;
   description: string;
-  ctaText: CtaTexts;
+  ctaText: CtaProps[];
 };
 
 const heroProps: HeroProps = {
   image: { src: "/img/video.png", alt: "", width: 1000, height: 1680 },
   title: "Managed agency selection",
   description: "Strengthen your onboarding process",
-  ctaText: {
-    cta1: {
+  ctaText: [
+    {
       img: "https://img.icons8.com/badges/48/blueprint.png",
       title: "Brief",
       description: (
@@ -42,7 +36,7 @@ const heroProps: HeroProps = {
         </>
       ),
     },
-    cta2: {
+    {
       img: "https://img.icons8.com/dotty/80/view-file.png",
       title: "Search",
       description: (
@@ -52,7 +46,7 @@ const heroProps: HeroProps = {
         </>
       ),
     },
-    cta3: {
+    {
       img: "https://img.icons8.com/dotty/80/meeting-room.png",
       title: "Pitch",
       description: (
@@ -62,7 +56,7 @@ const heroProps: HeroProps = {
         </>
       ),
     },
-  },
+  ],
 };
 
 const Home: React.FC = () => {
