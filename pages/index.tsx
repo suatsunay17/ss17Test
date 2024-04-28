@@ -1,9 +1,36 @@
+import React from "react";
 import { Hero } from "../sections";
 
-const heroProps = {
+type ImageProps = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
+type CtaProps = {
+  img: string;
+  title: string;
+  description: JSX.Element;
+};
+
+type CtaTexts = {
+  cta1: CtaProps;
+  cta2: CtaProps;
+  cta3: CtaProps;
+};
+
+type HeroProps = {
+  image: ImageProps;
+  title: string;
+  description: string;
+  ctaText: CtaTexts;
+};
+
+const heroProps: HeroProps = {
   image: { src: "/img/video.png", alt: "", width: 1000, height: 1680 },
   title: "Managed agency selection",
-  description: "Strenghten your onboarding process",
+  description: "Strengthen your onboarding process",
   ctaText: {
     cta1: {
       img: "https://img.icons8.com/badges/48/blueprint.png",
@@ -20,8 +47,8 @@ const heroProps = {
       title: "Search",
       description: (
         <>
-          In-depth agency search covering; <b>criteria mathing</b>, door
-          knocking and due-dilligence vetting.
+          In-depth agency search covering; <b>criteria matching</b>, door
+          knocking and due-diligence vetting.
         </>
       ),
     },
@@ -38,7 +65,7 @@ const heroProps = {
   },
 };
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
       <head>
@@ -51,8 +78,9 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        {/** Other sections */}
       </div>
     </>
   );
-}
+};
+
+export default Home;

@@ -19,8 +19,7 @@ interface HeroProps {
   };
   title: string;
   description: string;
-  ctaText: string;
-  props: any;
+  ctaText: {};
 }
 
 export const Hero: React.FC<HeroProps> = ({
