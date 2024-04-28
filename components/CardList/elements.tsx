@@ -3,6 +3,7 @@ import styled from "styled-components";
 const StyledCardListContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
 
   @media (max-width: 1024px) {
@@ -28,7 +29,7 @@ const StyledCardContainer = styled.div`
   }
 
   &:hover {
-    border: 3px solid #006efd;
+    outline: 3px solid #006efd;
     cursor: pointer;
 
     h1 {
@@ -36,6 +37,7 @@ const StyledCardContainer = styled.div`
       text-decoration: underline;
     }
   }
+
 `;
 
 const StyledCardInnerText = styled.div`
