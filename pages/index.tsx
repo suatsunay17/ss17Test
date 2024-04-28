@@ -8,19 +8,19 @@ type ImageProps = {
   height: number;
 };
 
-type CtaProps = {
+export type CtaProps = {
   img: string;
   title: string;
   description: JSX.Element;
 };
 
-type CtaTexts = {
+export type CtaTexts = {
   cta1: CtaProps;
   cta2: CtaProps;
   cta3: CtaProps;
 };
 
-type HeroProps = {
+export type HeroProps = {
   image: ImageProps;
   title: string;
   description: string;

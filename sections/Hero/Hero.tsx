@@ -9,18 +9,10 @@ import {
 } from "./elements";
 import { Card } from "~/collections";
 import React from "react";
+import { HeroProps } from "~pages";
+import { CtaTexts } from "~pages";
 
-interface HeroProps {
-  image: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-  title: string;
-  description: string;
-  ctaText: {};
-}
+
 
 export const Hero: React.FC<HeroProps> = ({
   image,
